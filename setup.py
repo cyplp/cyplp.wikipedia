@@ -13,6 +13,7 @@ requires = [
     'pyramid_chameleon',
     'pyramid_debugtoolbar',
     'waitress',
+    'requests',
     ]
 
 setup(name='cyplp.wikipedia',
@@ -34,9 +35,9 @@ setup(name='cyplp.wikipedia',
       zip_safe=False,
       install_requires=requires,
       tests_require=requires,
-      test_suite="cyplpwikipedia",
+      test_suite="cyplp.wikipedia",
       entry_points="""\
       [paste.app_factory]
-      main = cyplpwikipedia:main
+      main = cyplp.wikipedia:main
       """,
       )
