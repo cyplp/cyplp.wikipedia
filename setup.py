@@ -14,6 +14,7 @@ requires = [
     'pyramid_debugtoolbar',
     'waitress',
     'requests',
+    'smc.mw',
     ]
 
 setup(name='cyplp.wikipedia',
